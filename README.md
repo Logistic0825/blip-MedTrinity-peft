@@ -24,6 +24,7 @@ model = AutoModelForImageTextToText.from_pretrained("Salesforce/blip-image-capti
 ```
 
 # 模型结构：
+```
 BlipForConditionalGeneration(
   (vision_model): BlipVisionModel(
     (embeddings): BlipVisionEmbeddings(
@@ -209,13 +210,14 @@ BlipForConditionalGeneration(
     )
   )
 )
+```
 # 训练过程可视化
 ```python
 import wandb
 
 ##使用注册时的API key登录wandb."Your API key
 
-wandb.login(key = "21195b38ebd93abf1389611df531b21cc89bf294")
+wandb.login(key = "-------")
 
 ##建立wandb工程
 run = wandb.init(project="fint-tune blip-image-captioning-base with open medical data",
